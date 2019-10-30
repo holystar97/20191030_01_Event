@@ -3,6 +3,7 @@ package com.tjoeun.a20191030_01_event
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -20,7 +21,17 @@ class MainActivity : AppCompatActivity() {
 
         okBtn.setOnClickListener {
             firstTextView.text="확인버튼 클릭됨"
+
+            var inputId=loginIdEdt.text.toString()
+            resultTxt.text=inputId
+
+            Log.d("입력값 ", inputId)
+
+            Toast.makeText(this,inputId,Toast.LENGTH_SHORT).show()
+
+
         }
+
         okBtn.setOnLongClickListener {
 
             firstTextView.text="확인버튼 롱 클릭"
@@ -72,7 +83,7 @@ class MainActivity : AppCompatActivity() {
 
         when(a){
             0,1 ->Log.d("when 연습", "a가 0이나 1이다 ")
-            in 2..5->Log.d("when연습 ",, "a가 2~5사이다")
+            in 2..5->Log.d("when연습 ", "a가 2~5사이다")
             in intList -> Log.d("when연습","a가 intList에 포함")
             !in intList -> Log.d("when연습", "a가 inList에 불포함")
 
@@ -85,7 +96,7 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        //커밋 2번용 주석 
+        //커밋 2번용 주석
 
         for (i in 0..5){
             Log.d("숫자찍기" , String.format("%d",i))
