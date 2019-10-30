@@ -5,8 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:padding="10dp"
+    >
 
-   
+    <!--    padding, margin을 그냥 쓰면 네방향 균등하게 적용 -->
+
+    <TextView
+        android:id="@+id/firstTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="초기값 "/>
+
+
+
+
 
 </LinearLayout>
