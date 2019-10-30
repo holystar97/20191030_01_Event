@@ -84,6 +84,9 @@ class MainActivity : AppCompatActivity() {
             Log.d("사람이름", name)
         }
 
+
+        //커밋 2번용 주석 
+
         for (i in 0..5){
             Log.d("숫자찍기" , String.format("%d",i))
         }
