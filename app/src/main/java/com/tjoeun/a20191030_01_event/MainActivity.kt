@@ -78,6 +78,8 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        //커밋 1번용 주석
+
         for (name in stringList){
             Log.d("사람이름", name)
         }
